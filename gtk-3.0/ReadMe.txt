@@ -1,4 +1,4 @@
-This theme is heabily based of the Zorin themes.
+This theme is heavily based of the Zorin themes.
 
 Download their themes at: https://github.com/ZorinOS/
 
