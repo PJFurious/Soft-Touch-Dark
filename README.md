@@ -1,4 +1,4 @@
-# Zorin-remix
+# Soft Touch Dark
 For the theme to fully work on Pop-Os delete these lines of code in the following two files: 
 /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/dark.css 
 remove:
