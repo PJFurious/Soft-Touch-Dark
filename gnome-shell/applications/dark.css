@@ -1,0 +1,27 @@
+.cosmic-applications-dialog {
+       background-color: red; /* #191919 */
+}
+
+.app-well-app:focus .overview-icon {
+	background-color: red; /*background-color: #9b9b9b;*/
+}
+
+.cosmic-applications-icon {
+       color: red; /* #9b9b9b */
+}
+
+.cosmic-applications-folder-title {
+       color: white;
+}
+
+.cosmic-applications-available {
+       color: white;
+}
+
+.cosmic-folder-edit-button {
+	background: #353535;
+}
+
+.cosmic-folder-edit-button:hover {
+	background: #484848;
+}

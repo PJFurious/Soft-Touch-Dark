@@ -130,7 +130,7 @@ StScrollBar {
   -barlevel-height: 4px;
   -barlevel-background-color: #1f1f1f;
   -barlevel-border-color: rgba(0, 0, 0, 0);
-  -barlevel-active-background-color: white;
+  -barlevel-active-background-color: rgba(255, 255, 255, 0.85);
   -barlevel-active-border-color: rgba(0, 0, 0, 0);
   -barlevel-border-width: 0px;
   -slider-height: 4px;
@@ -139,7 +139,7 @@ StScrollBar {
   -slider-active-background-color: #969696;
   -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
-  -slider-handle-radius: 8px;
+  -slider-handle-radius: 0px;
   -slider-handle-border-color: #141414;
   height: 18px;
   border: 0 solid transparent;
@@ -148,14 +148,14 @@ StScrollBar {
   color: white; }
   .slider:hover {
     color: #969696;
-    -slider-handle-radius: 8px; }
+    -slider-handle-radius: 2px; }
   .slider:active {
     color: #969696;
-    -slider-handle-radius: 8px; }
+    -slider-handle-radius: 2px; }
   .popup-menu-item.selected .slider {
     -slider-background-color: #232323;
     -slider-active-background-color: #969696;
-    -slider-handle-radius: 8px; }
+    -slider-handle-radius: 2px; }
 
 .check-box StBoxLayout {
   spacing: .8em; }
@@ -208,7 +208,7 @@ StScrollBar {
     padding: 0;
     box-shadow: inset 0 0 black;
     border-top-width: 1px;
-    border-bottom-width: 1px;
+    border-bottom-width: 0;
     color: #969696;
     background-color: rgba(25, 25, 25, 0.95);
     border-color: rgba(27, 27, 27, 0.95); }
@@ -556,7 +556,7 @@ StScrollBar {
   
 .popup-menu-boxpointer .popup-menu-content {
   margin-left: 0px;
-  background-color: rgba(25, 25, 25, 0.95);
+  background-color: rgba(25, 25, 25, 0.98);
   border-radius: 12px;
 }
 
@@ -704,10 +704,10 @@ StScrollBar {
 
 #panel {
   font-weight: bold;
-  height: 30px;
+  height: 2.1em;
   min-height: 27px;
   background-color: transparent;
-  border-bottom-width: 1px; }
+  border-bottom-width: 0; }
   #panel.dynamic-top-bar-white-btn {
     border-image: none; }
   #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
@@ -847,7 +847,7 @@ StScrollBar {
 
 .datemenu-calendar-column {
   spacing: 6px;
-  border: transparent;
+  border: 0 solid white;
   padding: 0 12px; }
   .datemenu-calendar-column:ltr {
     margin-right: 8px;
@@ -1552,14 +1552,15 @@ StScrollBar {
   margin: 5px;
   padding: 4px;
   background-color: rgba(20, 20, 20, 0.95); 
-  border-color: none;
   background-gradient-direction: none;
   border-color-gradient-direction: horizontal; 
   border-color-gradient-start: rgba(190, 190, 190, 0.85); 
   border-color-gradient-end: rgba(255, 255, 255, 0.85);
-  color: white;
   border-width: 1;
   border-radius: 12px; }
+  .notification-banner:hover{
+  color: white;
+  border-color: white;}
   .notification-banner .notification-icon,
   .notification-banner:hover .notification-icon,
   .notification-banner:focus .notification-icon {
@@ -1588,7 +1589,6 @@ StScrollBar {
     .notification-banner:hover .notification-button:last-child,
     .notification-banner:focus .notification-button:first-child,
     .notification-banner:focus .notification-button:last-child {
-      border-color: transparent;
       border-radius: 10px; }
 
 .secondary-icon {
@@ -2034,7 +2034,7 @@ StScrollBar {
       color: white;
       text-shadow: black 0px 2px 2px; }
     #LookingGlassDialog .notebook-tab:selected {
-      border-bottom-width: 1px;
+      border-bottom-width: 0px;
       color: #969696;
       text-shadow: black 0px 2px 2px; }
   #LookingGlassDialog StBoxLayout#EvalBox {
@@ -2111,10 +2111,16 @@ StScrollBar {
   
 .cosmic-applications-separator, .app-well-app-running-dot {
   color: white;
-  background-color: white;
+  background-gradient-direction: horizontal; 
+  background-gradient-start: rgba(190, 190, 190, 1); 
+  background-gradient-end: rgba(255, 255, 255, 1);
 }
 
 .app-well-app-running-dot {
+  color: white;
+  background-gradient-direction: horizontal; 
+  background-gradient-start: rgba(190, 190, 190, 1); 
+  background-gradient-end: rgba(255, 255, 255, 1);
   width: 6px;
   height: 6px;
   margin-bottom: 10px;
