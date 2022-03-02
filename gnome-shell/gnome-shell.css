@@ -2154,3 +2154,9 @@ StScrollBar {
       border-bottom-width: 1px;
       border-color: transparent;
       border-radius: 12px;  }
+      
+.workspace-thumbnail-indicator {
+	border: 3px solid white;
+	border-radius: 12px;
+}
+
